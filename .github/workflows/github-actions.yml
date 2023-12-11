@@ -1,0 +1,18 @@
+name: Voting-CI
+on: [push]
+
+jobs:
+  unit-test:
+   runs-on: ubuntu-latest
+   name: Unit-tests
+   steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Environment Setup
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.15.0
+
+    - name: Unit test
+      uses: ambersun1234/hardhat-test-action@v1
