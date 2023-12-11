@@ -36,10 +36,10 @@ const config: HardhatUserConfig = {
    * variables necessary for it to work
    * */
   networks: {
-    sepolia: {
-      url: ALCHEMY_SEPOLIA_URL,
-      accounts: [`0x${SEPOLIA_TESTNET_PRIVATE_KEY}`]
-    },
+    // sepolia: {
+    //   url: ALCHEMY_SEPOLIA_URL,
+    //   accounts: [`0x${SEPOLIA_TESTNET_PRIVATE_KEY}`]
+    // },
     localhost: {
       url: LOCALHOST_URL,
       chainId: LOCALHOST_CHAIN_ID,
